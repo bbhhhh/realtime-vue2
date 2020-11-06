@@ -228,8 +228,12 @@
 
                 var confObj = {
                     method: 'post',
-                    url: 'http://135.251.218.101:9200/ds-realtime*/_search',
+                    //url: 'http://135.251.218.101:9200/ds-realtime*/_search',
+                    //url: 'http://135.251.218.88:9008/ds-realtime*/_search',
+                    // url: 'https://c6f83933d54a45d8bde48825bfcc6c26.ap-southeast-1.aws.found.io:9243/ds-realtime*/_search',
+                    url: 'http://150.158.172.180:8080/ds-realtime*/_search',
                     //headers: {'contentType': 'application/json'},
+                    headers: {'Authorization': 'Basic ZWxhc3RpYzp3blJoWjNFbEdzbVBHTzJnblg0RGNIVnk='},
                     data: dataObj
                 };
                 console.log(JSON.stringify(confObj.data));
